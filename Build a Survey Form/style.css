@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-lightgray: #f9f9f9;
+  --color-gray: #cccccc;
+  --color-darkgray: #606060;
+  --color-black: #0f0f0f;
+  --color-red: #ff0000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-darkgray);
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: var(--color-white);
+}
+
+.header {
+  text-align: left;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.description {
+  color: var(--color-darkgray);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background-color: var(--color-lightgray);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  border-color: var(--color-red);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #cc0000;
+}

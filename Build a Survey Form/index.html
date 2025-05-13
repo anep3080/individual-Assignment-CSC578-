@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Gaming Competition Registration</title>
+</head>
+<body>
+  <header class="header">
+    <h1 id="title" class="text-center">Online Gaming Competition Registration</h1>
+    <p id="description" class="text-center">Register now to join the ultimate gaming showdown!</p>
+  </header>
+
+  <form id="survey-form">
+    <section>
+      <label id="name-label" for="name">Full Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your full name" class="form-control" required>
+    </section>
+
+    <section>
+      <label id="email-label" for="email">Email Address</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+    </section>
+
+    <section>
+      <label id="number-label" for="number">Age <span class="clue">(Must be 13+)</span></label>
+      <input type="number" name="age" id="number" min="13" max="99" placeholder="Enter your age" class="form-control">
+    </section>
+
+    <section>
+      <p>What is your gaming platform of choice?</p>
+      <select id="dropdown" name="platform" class="form-control" required>
+        <option disabled selected value="">Select your platform</option>
+        <option value="pc">PC</option>
+        <option value="console">Console (PlayStation/Xbox)</option>
+        <option value="mobile">Mobile</option>
+        <option value="other">Other</option>
+      </select>
+    </section>
+
+    <section>
+      <p>Preferred Game Category</p>
+      <label>
+        <input name="game-type" value="fps" type="radio" class="input-radio" checked> First-Person Shooter (FPS)
+      </label><br>
+      <label>
+        <input name="game-type" value="moba" type="radio" class="input-radio"> MOBA
+      </label><br>
+      <label>
+        <input name="game-type" value="battle-royale" type="radio" class="input-radio"> Battle Royale
+      </label><br>
+      <label>
+        <input name="game-type" value="sports" type="radio" class="input-radio"> Sports
+      </label>
+    </section>
+
+    <section>
+      <p>Which games will you participate in?<span class="clue">(Select all that apply)</span></p>
+      <label><input name="games" value="valorant" type="checkbox" class="input-checkbox"> Valorant</label><br>
+      <label><input name="games" value="league" type="checkbox" class="input-checkbox"> League of Legends</label><br>
+      <label><input name="games" value="pubg" type="checkbox" class="input-checkbox"> PUBG</label><br>
+      <label><input name="games" value="cod" type="checkbox" class="input-checkbox"> Call of Duty</label><br>
+      <label><input name="games" value="fifa" type="checkbox" class="input-checkbox"> FIFA</label><br>
+      <label><input name="games" value="mobile-legends" type="checkbox" class="input-checkbox"> Mobile Legends</label>
+    </section>
+
+    <section>
+      <p>Any comments, team names, or special requests?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment or team name here..."></textarea>
+    </section>
+
+    <button type="submit" id="submit" class="submit-button">Register Now</button>
+  </form>
+</body>
+</html>
