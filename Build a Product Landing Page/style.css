@@ -1,0 +1,271 @@
+/* Apple-inspired CSS styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --gray-bg: #f5f5f7;
+  --text-color: #1d1d1f;
+  --accent: #0071e3;
+  --hover-accent: #005bb5;
+  --border-color: #d2d2d7;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray-bg);
+  font-family: var(--font-main);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--hover-accent);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-accent);
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 10;
+}
+
+.logo > img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Navigation */
+
+nav > ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav > ul > li {
+  font-weight: 500;
+}
+
+/* Hero Section */
+
+#hero {
+  margin-top: 100px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#hero h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#hero input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+#hero input[type="submit"] {
+  background-color: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#hero input[type="submit"]:hover {
+  background-color: var(--hover-accent);
+}
+
+/* Features */
+
+#features {
+  margin-top: 60px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature-item .icon {
+  font-size: 32px;
+  color: var(--accent);
+}
+
+.feature-item .desc {
+  flex: 1;
+}
+
+/* Video Section */
+
+#how-it-works {
+  margin: 60px auto;
+  text-align: center;
+}
+
+#how-it-works iframe {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Pricing */
+
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.product {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.product .level {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6e6e73;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product ol {
+  margin: 20px 0;
+}
+
+.product ol li {
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #4b4b4b;
+}
+
+.product button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: var(--hover-accent);
+}
+
+/* Footer */
+
+footer {
+  background-color: #f2f2f2;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+footer span {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
