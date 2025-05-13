@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Python is an interpreted, high-level, general-purpose programming language.</p>
+        <p>It supports multiple programming paradigms, including structured, object-oriented, and functional programming.</p>
+        <p>Python is dynamically typed and garbage-collected.</p>
+        <p>Its design philosophy emphasizes code readability with its use of significant indentation.</p>
+        <code>print("Hello, world!")</code>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Variables in Python are created when you assign a value to them.</p>
+        <p>You don't need to declare the type of a variable beforehand.</p>
+        <p>Variable names are case-sensitive and must follow certain rules.</p>
+        <code>x = 5</code>
+        <code>name = "Alice"</code>
+        <ul>
+          <li>Must begin with a letter or underscore</li>
+          <li>Can contain letters, numbers, and underscores</li>
+          <li>Are case-sensitive</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>Python has several built-in data types.</p>
+        <p>Some common ones include integers, floats, strings, and booleans.</p>
+        <p>You can check the type of a variable using the `type()` function.</p>
+        <code>type(5)</code>
+        <code>type("hello")</code>
+        <ul>
+          <li>int</li>
+          <li>float</li>
+          <li>str</li>
+          <li>bool</li>
+          <li>list</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>Control flow tools include if statements, for and while loops.</p>
+        <p>They let you execute code conditionally or repeatedly.</p>
+        <p>The `if` statement is used for conditional execution.</p>
+        <code>if x > 0:</code>
+        <code>  print("Positive")</code>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>Functions are defined using the `def` keyword.</p>
+        <p>They help you reuse code and organize programs logically.</p>
+        <p>You can also pass parameters and return values.</p>
+        <code>def greet(name):</code>
+        <code>  return "Hello " + name</code>
+        <ul>
+          <li>Use `def` to define a function</li>
+          <li>Functions can return a value</li>
+          <li>Functions can have default arguments</li>
+          <li>Functions can take *args and **kwargs</li>
+          <li>Functions improve code modularity</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar/Navbar */
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 22, 22, 0.4);
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+#navbar header {
+  color: #000;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 12px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#navbar a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Main Content */
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 30px 20px;
+  margin-bottom: 100px;
+  max-width: 800px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Section styling */
+section article {
+  color: #4d4e53;
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+section li {
+  margin: 10px 0 0 30px;
+}
+
+/* Code styling */
+code {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+  #navbar ul {
+    border: 1px solid #ccc;
+    height: auto;
+    max-height: 207px;
+    overflow-y: auto;
+  }
+
+  #main-doc {
+    position: relative;
+    margin: 290px 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: 0;
+  }
+
+  code {
+    margin-left: -10px;
+    width: auto;
+    padding: 15px 10px 15px 10px;
+    min-width: 250px;
+  }
+}
